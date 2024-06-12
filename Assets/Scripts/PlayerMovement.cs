@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class First : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-   enum direction
+   enum Direction
     {
         North, South, East, West
     }
 
     public float speed;
     Rigidbody2D rb;
-    direction movingDir;
+    Direction movingDir;
 
      
     void Start()
@@ -28,11 +28,11 @@ public class First : MonoBehaviour
 
             if (Input.GetAxisRaw("Horizontal")  > 0)
             {
-                movingDir = direction.East;
+                movingDir = Direction.East;
             }
             else if (true)
             {
-                movingDir = direction.West;
+                movingDir = Direction.West;
             } 
         }
         else if (Input.GetAxisRaw("Vertical") != 0)
@@ -41,11 +41,11 @@ public class First : MonoBehaviour
 
             if (Input.GetAxisRaw("Vertical") > 0)
             {
-                movingDir = direction.North;
+                movingDir = Direction.North;
             }
             else if (true)
             {
-                movingDir = direction.South;
+                movingDir = Direction.South;
             }
         }
     }
@@ -54,16 +54,16 @@ public class First : MonoBehaviour
     {
         switch(movingDir)
         {
-            case direction.North:
+            case Direction.North:
                 rb.velocity = new Vector2(0, speed * Time.fixedDeltaTime);
                 break;
-            case direction.South:
+            case Direction.South:
                 rb.velocity = new Vector2(0, -speed * Time.fixedDeltaTime);
                 break;
-            case direction.East:
+            case Direction.East:
                 rb.velocity = new Vector2(speed * Time.fixedDeltaTime, 0);
                 break;
-            case direction.West:
+            case Direction.West:
                 rb.velocity = new Vector2(-speed * Time.fixedDeltaTime, 0);
                 break;
 
