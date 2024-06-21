@@ -1874,9 +1874,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specificPanel: {fileID: 1338026359}
-  levels: TargetScene
-  nextLevel: tester2
-  retry: tester
+  levels: Levels
+  nextLevel: Level 2
+  retry: Level 1
 --- !u!1 &394869287
 GameObject:
   m_ObjectHideFlags: 0
