@@ -5,8 +5,9 @@ using UnityEngine.UI;
 public class SceneSwitcher : MonoBehaviour
 {
     public GameObject specificPanel; // Assign your panel in the inspector
-    public string targetSceneName = "TargetScene"; // The name of the scene to switch to
-
+    public string levels = "TargetScene"; // The name of the scene to switch to
+    public string nextLevel = "TargetScene";
+    public string retry = "TargetScene";
     void Update()
     {
         // Check if the specific panel is active
@@ -16,7 +17,22 @@ public class SceneSwitcher : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.A))
             {
                 // Load the target scene
-                SceneManager.LoadScene(targetSceneName);
+                SceneManager.LoadScene(levels);
+            }
+
+
+            
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                
+                SceneManager.LoadScene(nextLevel);
+            }
+
+            
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                
+                SceneManager.LoadScene(retry);
             }
         }
     }
