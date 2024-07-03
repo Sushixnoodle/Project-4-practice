@@ -29,7 +29,7 @@ public class SceneSwitcher : MonoBehaviour
             }
 
             
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 
                 SceneManager.LoadScene(retry);

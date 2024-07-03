@@ -9439,6 +9439,7 @@ GameObject:
   - component: {fileID: 1094778863}
   - component: {fileID: 1094778867}
   - component: {fileID: 1094778866}
+  - component: {fileID: 1094778868}
   - component: {fileID: 1094778865}
   - component: {fileID: 1094778864}
   m_Layer: 5
@@ -9546,9 +9547,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specificPanel: {fileID: 1842394984}
-  levels: Levels
-  nextLevel: Level 2
-  retry: Level 1
+  levels: AnotherLevels
+  nextLevel: Final
+  retry: Level 2
+--- !u!114 &1094778868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094778862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa7590726fc8ca46be90b8997b46fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Levels
 --- !u!1 &1095975995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6922491933373563590, guid: bf9711ed229891144b2ba3e1f4c0cf0a, type: 3}
@@ -17897,7 +17911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69aa9a89eb2b1814693791d6702ea255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 127.3
+  speed: 109.3
 --- !u!50 &2080871550
 Rigidbody2D:
   serializedVersion: 4

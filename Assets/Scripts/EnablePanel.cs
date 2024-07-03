@@ -17,7 +17,7 @@ public class EnablePanel : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha6))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             panel.SetActive(true);
         }

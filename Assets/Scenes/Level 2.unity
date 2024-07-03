@@ -9700,6 +9700,7 @@ GameObject:
   - component: {fileID: 1398973464}
   - component: {fileID: 1398973463}
   - component: {fileID: 1398973462}
+  - component: {fileID: 1398973466}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9805,9 +9806,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specificPanel: {fileID: 1703680950}
-  levels: Levels
+  levels: AnotherLevels
   nextLevel: Level 3
   retry: Level 2
+--- !u!114 &1398973466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398973460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa7590726fc8ca46be90b8997b46fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Levels
 --- !u!1001 &1398975810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12102,7 +12116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1703680951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12186,7 +12200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1706973902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14198,7 +14212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69aa9a89eb2b1814693791d6702ea255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 127.3
+  speed: 109.3
 --- !u!50 &1961570490
 Rigidbody2D:
   serializedVersion: 4
