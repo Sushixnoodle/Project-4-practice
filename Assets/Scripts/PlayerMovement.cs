@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
+    public AudioSource moveAudioSource; // Reference to the AudioSource
     private Rigidbody2D rb;
     private bool isMoving = false;
 
@@ -55,6 +56,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Hit " + hit.collider.name);
             StartCoroutine(MoveToPosition(hit.point));
+
+            // Play move sound
+            if (moveAudioSource != null && moveAudioSource.clip != null)
+            {
+                moveAudioSource.PlayOneShot(moveAudioSource.clip);
+            }
         }
         else
         {
